@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -9,6 +10,7 @@ public class ObjectBehavior : MonoBehaviour
             if (other.CompareTag("Player"))
             {
                 Debug.Log("Take Photo");
+                gameObject.SetActive(false);
             }
         }
 }
